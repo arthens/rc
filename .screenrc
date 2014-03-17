@@ -1,0 +1,62 @@
+#
+# ~/.screenrc
+# 
+# Modified .screenrc for myself!
+#
+# Author: Giacomo Gatelli <arthens@gmail.com> 
+# Original Author: Aaron Schaefer <aaron@elasticdog.com>
+# Original Author: Miles Z. Sterrett <miles.sterrett@gmail.com>
+#
+
+# Settings used to initialize screen sessions
+term screen-256color
+
+# Auto detach instead of killing screen
+autodetach on
+
+# Change default escape sequence from C-a to a backslash`
+escape `` 
+
+# Do not display the copyright page
+startup_message off
+
+# Change the number of scrollback lines
+defscrollback 1000
+
+# Ensure the default shell is the same as the $SHELL environment variable
+shell -$SHELL
+
+# Make navigating between regions easier
+bind s split
+bind v split -v
+
+# Use Shirt +  $arrow to move through regions
+bindkey ^[[1;2D focus up 
+bindkey ^[[1;2C focus down
+bindkey ^[[1;2A focus top
+bindkey ^[[1;2B focus bottom
+
+# Zero-indexing is a pain when using ` as an escape char
+bind 1 select 0
+bind 2 select 1
+bind 3 select 2
+bind 4 select 3
+bind 5 select 4
+bind 6 select 5
+bind 7 select 6
+bind 8 select 7
+bind 9 select 8
+
+# Make resizing regions easier
+bind = resize =
+bind + resize +10
+bind - resize -10
+
+# Configure status bar at the bottom of the terminal
+hardstatus alwayslastline
+hardstatus string "%{= kb}[ %=%{w}%?%-Lw%?%{C}(%{W}%n*%f %t%?(%u)%?%{C})%{w}%?%+Lw%?%?%= %{b}][%{C} %Y.%m.%d %{W}%0c %{b}]"
+
+# Turn off the fucking visual bell
+vbell off
+
+# End of file

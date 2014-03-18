@@ -54,7 +54,7 @@ bind - resize -10
 
 # Configure status bar at the bottom of the terminal
 hardstatus alwayslastline
-hardstatus string "%{= kb}[ %=%{w}%?%-Lw%?%{C}(%{W}%n*%f %t%?(%u)%?%{C})%{w}%?%+Lw%?%?%= %{b}][%{C} %Y.%m.%d %{W}%0c %{b}]"
+hardstatus string "%{= kw}[ %{+b B}%H%{-b w} ][ %?%-Lw%?%{BW} %n %{+b}%t%{-b} {kw}%?%+Lw%?%?%= %{w}]"
 
 # Turn off the fucking visual bell
 vbell off

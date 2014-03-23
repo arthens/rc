@@ -1,4 +1,4 @@
-# Collection of rc files
+# My conf files :)
 
 Download with:
 

@@ -11,6 +11,7 @@ Plugin 'gmarik/vundle'
 
 " Color plugins
 Plugin 'nanotech/jellybeans.vim'
+Plugin 'quanganhdo/grb256'
 
 " Lisp/Clojure plugins
 Plugin 'vim-scripts/paredit.vim'
@@ -35,4 +36,4 @@ filetype plugin indent on
 syntax on
 
 " Improved color scheme
-colorscheme jellybeans
+colorscheme grb256 

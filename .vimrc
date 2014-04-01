@@ -22,6 +22,12 @@ Plugin 'tpope/vim-fireplace'
 " Java plugin, also used by Clojure
 Plugin 'tpope/vim-classpath'
 
+" Ruby
+Plugin 'vim-ruby/vim-ruby'
+
+" PHP :(
+Plugin 'vim-scripts/php.vim'
+
 " Navigation
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'

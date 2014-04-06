@@ -38,8 +38,17 @@ Plugin 'msanders/snipmate.vim'
 " Vundle is done, we can re-enable filetype
 filetype plugin indent on
 
+autocmd Filetype html setlocal ts=2 sts=2 sw=2
+autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
+autocmd Filetype javascript setlocal ts=4 sts=4 sw=4
+autocmd Filetype php setlocal ts=4 sts=4 sw=4
+
 " -------
 syntax on
 
 " Improved color scheme
 colorscheme grb256 
+
+" Additional key mappings
+:map <enter> O
+

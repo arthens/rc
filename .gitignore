@@ -1,14 +1,17 @@
-# Editor #
+# Editor
 .idea
 
-# Temporary files #
+# Temporary files
 *~
 *.swp
 *.swo
 
-# OS files #
+# OS files
 .DS_Store*
 Thumbs.db
 
-# PHP #
+# PHP
 vendor
+
+# Clojure
+target

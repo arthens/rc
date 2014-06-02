@@ -30,4 +30,5 @@
 	a = add -A .
 	p = pull
 	pr = pull --rebase
+	co = checkout
 	d = diff

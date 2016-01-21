@@ -32,3 +32,4 @@
 	pr = pull --rebase
 	co = checkout
 	d = diff
+	lr = ! git for-each-ref --sort=-committerdate refs/heads/ --format='%(color:yellow bold)%(committerdate:relative)| %(color:cyan bold)%(authorname)| %(color:red bold)%(refname:short) %(color:reset)| %(subject)' --count=10 | column -ts '|'

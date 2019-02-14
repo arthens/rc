@@ -33,3 +33,10 @@
 	co = checkout
 	d = diff
 	lr = ! git for-each-ref --sort=-committerdate refs/heads/ --format='%(color:yellow bold)%(committerdate:relative)| %(color:cyan bold)%(authorname)| %(color:red bold)%(refname:short) %(color:reset)| %(subject)' --count=10 | column -ts '|'
+	lrl = ! git for-each-ref --sort=-committerdate refs/heads/ --format='%(color:yellow bold)%(committerdate:relative)| %(color:cyan bold)%(authorname)| %(color:red bold)%(refname:short) %(color:reset)| %(subject)' --count=30 | column -ts '|'
+	whodeleted = rev-list -n 1 HEAD --
+	l = log --oneline --decorate
+[rebase]
+	autosquash = true
+[merge]
+	conflictstyle = diff3

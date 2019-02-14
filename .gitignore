@@ -1,5 +1,6 @@
 # Editor
 .idea
+*.iml
 
 # Temporary files
 *~
@@ -9,9 +10,6 @@
 # OS files
 .DS_Store*
 Thumbs.db
-
-# PHP
-vendor
 
 # Clojure
 target

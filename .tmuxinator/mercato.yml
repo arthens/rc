@@ -1,0 +1,21 @@
+# ~/.tmuxinator/contests.yml
+
+name: mercatoetico
+root: ~/Projects/arthens/mercatoetico
+
+windows:
+  - mercatoetico:
+      - git s
+
+  - d\mercatoetico:
+      - cd backend    
+      - docker-compose run  mercatoetico bash
+
+  - frontend:
+      - cd frontend
+      - npm run dev
+
+  - server:
+      - cd backend
+      - docker-compose up mercatoetico
+
